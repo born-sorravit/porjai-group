@@ -1,0 +1,171 @@
+.btn-share-on-social {
+	position:relative;
+	display:block;
+	padding:0;
+	margin:0;
+	border:none !important;
+	background: none !important;
+	color:rgba(16,16,16,1) !important;
+	background-color:rgba(16,16,16,0.15) !important;
+	width:45px;
+	height:45px;
+	line-height:0 !important;
+	border-radius:100%;
+	text-align:center;	
+}
+.btn-share-on-social:hover {
+	color:rgba(255,255,255,1) !important;
+	background-color:rgba(16,16,16,0.8) !important;
+}
+.btn-share-on-social, .btn-share-on-social:hover {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+.btn-share-on-social > i {
+	font-size:18px;
+	line-height:45px;
+}
+.group-btn-onpage .btn-share-on-social {
+	background:none !important;
+	width:auto;
+	height:auto;
+}
+
+/* text label */
+.btn-share-on-social.text-label {
+	margin-top:30px;
+}
+.btn-share-on-social.text-label:before {
+	position: absolute;
+	/*content:"share on social";*/
+	content: attr(data-label);
+	top:-30px;
+	left:0;
+	width:45px;
+	text-transform:uppercase;
+	color:rgba(16,16,16,1) !important;
+}
+.btn-share-on-social.text-label.en:before {
+	font-size:17px;
+	line-height:20px;
+	font-weight:400;
+	letter-spacing:0.5px;
+}
+.btn-share-on-social.text-label:before,
+.btn-share-on-social.text-label.th:before {
+	font-size:20px;
+	line-height:20px;
+	font-weight:400;
+	letter-spacing:0.1px;
+}
+
+.btn-share-on-social.text-label.text-left {
+	margin-top:0;
+	margin-left:40px;
+}
+.btn-share-on-social.text-label.text-left:before {
+	top:0;
+	left:-45px;
+	height:45px;
+	line-height:45px;
+	text-align:right;
+	padding-right:15px;
+}
+
+.group-btn-onpage  .btn-share-on-social {
+	display:none;
+}
+
+.share-on-social {}
+.share-on-social .jssocials-shares {
+	margin:0 !important;
+}
+
+/* modal share */
+.modal-share {}
+.section-share {
+	position:relative;
+	text-align:center;
+	color:rgba(255,255,255,1);
+}
+.section-share .share-on-social {
+	margin:50px 0 !important;
+}
+.section-share .jssocials-share {
+	margin:0 !important;
+}
+.section-share .jssocials-share + .jssocials-share  {
+	margin-left:20px !important;
+}
+.section-share .jssocials-share-link {
+	width:70px;
+	height:70px;
+	border-radius:100%;
+	overflow:hidden;
+	text-align:center;
+	display:block;
+	font-size:28px;
+	line-height:70px;
+	padding:0;
+	cursor:pointer;
+}
+/* link */
+.section-share .jssocials-share.jssocials-share-line .jssocials-share-link {
+	font-size:32px;
+	background-color:#25af00;
+}
+.section-share .jssocials-share.jssocials-share-line .jssocials-share-link:hover {
+	background-color:#2dc804;
+}
+/* facebook */
+.section-share .jssocials-share.jssocials-share-facebook .jssocials-share-link {
+	background-color:#3864bf;
+}
+.section-share .jssocials-share.jssocials-share-facebook .jssocials-share-link:hover {
+	background-color:#4472d3;
+}
+/* messenger */
+.section-share .jssocials-share.jssocials-share-messenger .jssocials-share-link {
+	background-color:#0084ff;
+}
+.section-share .jssocials-share.jssocials-share-messenger .jssocials-share-link:hover {
+	background-color:#00a2ff;
+}
+/* copy link */
+.section-share .jssocials-share.copy-url .jssocials-share-link {
+	background-color:#fff;
+	color:rgba(16,16,16,1);
+}
+.section-share .jssocials-share.copy-url .jssocials-share-link:hover {
+	background-color:#f1f1f1;
+}
+
+/* lg more */
+@media (min-width:1200px) and (max-width:1649px) {
+}
+
+/* md */
+@media (min-width:992px) and (max-width:1199px) {
+}
+
+/* sm - xs */
+@media (max-width:991px) {
+.group-btn-onpage  .btn-share-on-social {
+	display: block;
+}
+}
+
+/* sm */
+@media (min-width:768px) and (max-width:991px) {
+}
+
+/* xs */
+@media (max-width:767px) {
+}
+
+/* xs more */
+@media (max-width:350px) {
+}
+
+

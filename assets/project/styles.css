@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "porjai-icon";
+  src:url("../fonts/icon.eot");
+  src:url("../fonts/icon.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/icon.woff") format("woff"),
+    url("../fonts/icon.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "porjai-icon" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="aicon-"]:before,
+[class*=" aicon-"]:before {
+  font-family: "porjai-icon" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.aicon-angle-double-down:before {
+  content: "\e000";
+}
+.aicon-angle-double-left:before {
+  content: "\e001";
+}
+.aicon-angle-double-right:before {
+  content: "\e002";
+}
+.aicon-angle-double-up:before {
+  content: "\e003";
+}
+.aicon-angle-down:before {
+  content: "\e004";
+}
+.aicon-angle-left:before {
+  content: "\e005";
+}
+.aicon-angle-right:before {
+  content: "\e006";
+}
+.aicon-angle-up:before {
+  content: "\e007";
+}
+.aicon-caret-down:before {
+  content: "\e008";
+}
+.aicon-caret-left:before {
+  content: "\e009";
+}
+.aicon-caret-right:before {
+  content: "\e00a";
+}
+.aicon-caret-up:before {
+  content: "\e00b";
+}
+.aicon-chevron-down:before {
+  content: "\e00c";
+}
+.aicon-chevron-left:before {
+  content: "\e00d";
+}
+.aicon-chevron-right:before {
+  content: "\e00e";
+}
+.aicon-chevron-up:before {
+  content: "\e00f";
+}
+.aicon-check:before {
+  content: "\e010";
+}
+.aicon-times:before {
+  content: "\e011";
+}
+.aicon-clock-o:before {
+  content: "\e012";
+}
+.aicon-cog:before {
+  content: "\e013";
+}
+.aicon-plus:before {
+  content: "\e014";
+}
+.aicon-plus-circle:before {
+  content: "\e015";
+}
+.aicon-plus-square:before {
+  content: "\e016";
+}
+.aicon-plus-square-o:before {
+  content: "\e017";
+}
+.aicon-minus:before {
+  content: "\e018";
+}
+.aicon-minus-circle:before {
+  content: "\e019";
+}
+.aicon-minus-square:before {
+  content: "\e01a";
+}
+.aicon-minus-square-o:before {
+  content: "\e01b";
+}
+.aicon-arrow-down:before {
+  content: "\e01c";
+}
+.aicon-arrow-left:before {
+  content: "\e01d";
+}
+.aicon-arrow-right:before {
+  content: "\e01e";
+}
+.aicon-arrow-up:before {
+  content: "\e01f";
+}
+.aicon-book:before {
+  content: "\e020";
+}
+.aicon-close:before {
+  content: "\e021";
+}
+.aicon-download:before {
+  content: "\e022";
+}
+.aicon-ellipsis-h:before {
+  content: "\e023";
+}
+.aicon-ellipsis-v:before {
+  content: "\e024";
+}
+.aicon-link:before {
+  content: "\e025";
+}
+.aicon-location-mark:before {
+  content: "\e026";
+}
+.aicon-lock:before {
+  content: "\e027";
+}
+.aicon-panorama:before {
+  content: "\e028";
+}
+.aicon-play:before {
+  content: "\e029";
+}
+.aicon-play-stroke:before {
+  content: "\e02a";
+}
+.aicon-quote-left:before {
+  content: "\e02b";
+}
+.aicon-quote-right:before {
+  content: "\e02c";
+}
+.aicon-share:before {
+  content: "\e02d";
+}
+.aicon-social-facebook:before {
+  content: "\e02e";
+}
+.aicon-social-facebook-stroke:before {
+  content: "\e02f";
+}
+.aicon-social-instagram:before {
+  content: "\e030";
+}
+.aicon-social-instagram-stroke:before {
+  content: "\e031";
+}
+.aicon-social-line:before {
+  content: "\e032";
+}
+.aicon-social-messenger:before {
+  content: "\e033";
+}
+.aicon-social-messenger-stroke:before {
+  content: "\e034";
+}
+.aicon-social-youtube:before {
+  content: "\e035";
+}
+.aicon-social-youtube-stroke:before {
+  content: "\e036";
+}
+.aicon-play-circle:before {
+  content: "\e037";
+}
+.aicon-play-circle-stroke:before {
+  content: "\e038";
+}
+.aicon-search:before {
+  content: "\e039";
+}
+.aicon-user:before {
+  content: "\e03a";
+}
+.aicon-display-box:before {
+  content: "\e03b";
+}
+.aicon-display-box-bold:before {
+  content: "\e03c";
+}
+.aicon-display-box-light:before {
+  content: "\e03d";
+}
+.aicon-display-list:before {
+  content: "\e03e";
+}
+.aicon-display-list-bold:before {
+  content: "\e03f";
+}
+.aicon-display-list-light:before {
+  content: "\e040";
+}

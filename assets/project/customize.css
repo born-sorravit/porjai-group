@@ -1,0 +1,164 @@
+.group-select-register  {
+	position:relative;
+	margin-top:25px;
+}
+.group-select-register .is-open {
+	z-index:10;
+}
+.box-select-register {
+	position:relative;
+	width:100%;
+	display:block;
+}
+.box-select-register, .box-select-register > .placeholder, .box-select-register > .input {
+	height:40px !important;
+} 
+.box-select-register > .placeholder, .box-select-register > .input {
+	font-size:22px;
+	line-height:40px;
+	font-weight:400;
+}
+.box-select-register > .input {
+	position:relative;
+	background:none !important;
+	border:none !important;
+	padding:0 !important;
+	margin:0 !important;
+	width:100%;
+	overflow:hidden;
+	z-index:3;
+}
+.textcolor-white .box-select-register > .input.under {
+	border-bottom:1px solid rgba(255,255,255,0.2) !important;
+}
+.box-select-register > .input.under,
+.textcolor-black .box-select-register > .input.under {
+	border-bottom:1px solid rgba(10,10,10,0.2) !important;
+}
+
+/* label input */
+.box-select-register > .placeholder,
+.box-select-register > .placeholder > .after {
+	position:absolute;
+	top:0;
+	left:0;
+	opacity:1;
+	z-index:1;
+}
+.box-select-register > .placeholder > .after{
+	font-size:17px;
+	top:-20px;
+	opacity:0.6;
+}
+.box-select-register > .placeholder{
+	transition:all 0.1s ease;
+	-webkit-transition:all 0.1s ease;
+	-moz-transition:all 0.1s ease;
+}
+/* under input */
+.box-select-register > .under-input {
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:1px;
+	width:100%;
+	z-index:2;
+}
+.box-select-register > .under-input:before,  .box-select-register > .under-input:after {
+	content:"";
+	position:absolute;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+}
+.box-select-register > .under-input:before {
+	width:100%;
+	z-index:1;
+}
+.box-select-register > .under-input:after {
+	width:0;
+	z-index:2;
+}
+.box-select-register > .under-input:before,
+.textcolor-black .box-select-register > .under-input:before {
+	border-color:rgba(10,10,10,0.2);
+}
+.box-select-register > .under-input:after,
+.textcolor-black  .box-select-register > .under-input:after {
+	border-color:rgba(10,10,10,0.9);
+}
+.textcolor-white .box-select-register > .under-input:before {
+	border-color:rgba(255,255,255,0.2);
+}
+.textcolor-white  .box-select-register > .under-input:after {
+	border-color:rgba(255,255,255,0.9);
+}
+.box-select-register.focus > .under-input:after {
+	width:100%;
+}
+.box-select-register > .under-input:after,
+.box-select-register.focus > .under-input:after {
+	transition:width 1s ease;
+	-webkit-transition:width 1s ease;
+	-moz-transition:width 1s ease;
+}
+/* .box-select-register {} */
+.box-select-register > .input {
+	cursor:pointer;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	padding-right:50px !important;
+}
+.box-select-register > .arrow {
+	position:absolute;
+	bottom:0;
+	right:0;
+	height:40px;
+	width:40px;
+	text-align:center;
+}
+.box-select-register > .arrow:before {
+	content:"";
+	position:absolute;
+	width:1px;
+	height:20px;
+	left:0;
+	top:10px;
+}
+.box-select-register > .placeholder { width:100%; }
+.textcolor-white .box-select-register > .arrow:before {
+	background-color:rgba(255,255,255,0.05);
+}
+.box-select-register > .arrow:before,
+.textcolor-black .box-select-register > .arrow:before {
+	background-color:rgba(10,10,10,0.05);
+}
+.box-select-register > .arrow [ class*="icon-" ] {
+	position:absolute;
+	width:100%;
+	font-size:10px;
+	line-height:35px;
+	bottom:0;
+}
+.box-select-register > .placeholder .before,
+.box-select-register > .placeholder .after,
+.box-select-register.has-data > .placeholder .after {
+	display: block;
+}
+.box-select-register.has-data > .placeholder .before {
+	display:none;
+}
+
+.box-select-register > .placeholder .after {
+	opacity:0;
+}
+.box-select-register.focus > .placeholder .after,
+.box-select-register.has-data > .placeholder .after {
+	opacity:0.6;
+}
+.box-select-register > .placeholder .after,
+.box-select-register.focus > .placeholder .after, .box-select-register.has-data > .placeholder .after {
+	transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+}

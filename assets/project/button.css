@@ -1,0 +1,106 @@
+a.opacity-hover, a.opacity-hover:hover {
+	transition:all 0.5s ease;
+	-webkit-transition:all 0.5s ease;
+	-moz-transition:all 0.5s ease;
+}
+a.opacity-hover { opacity:0.6; }
+a.opacity-hover:hover { opacity:1; }
+
+
+/* --- btn under --- */
+
+.group-btn-under {
+	position:relative;
+	display:table;
+	clear:both;
+}
+.group-btn-under > .btn-under + .btn-under {
+	margin-left:30px;
+}
+.group-btn-under.center {
+	margin:0 auto;
+}
+
+.btn-under {
+	position:relative;
+	cursor:pointer;
+}
+.btn-under, .btn-under.th {
+	/*font-size:20px;*/
+	font-weight: 500;
+}
+.btn-under.en {
+	text-transform: uppercase;
+	font-weight: 400;
+}
+a.btn-under {
+	display:inline-block;
+}
+button.btn-under {
+	background: none !important;
+	border:none !important;
+	margin:0;
+	padding:0;
+}
+.under-hover:before,
+.multi-under-hover:before,
+.multi-under-hover:after {
+	position:absolute;
+	content:"";
+	bottom:0;
+	left:0;
+	height:1px;
+}
+.under-hover:before,
+.multi-under-hover:before {
+	width:0;
+}
+.under-hover:hover:before,
+.multi-under-hover:hover:before,
+.multi-under-hover:after,
+.under-hover.active:before {
+	width:100%;
+}
+.under-hover:before,
+.multi-under-hover:before,
+.textcolor-black .under-hover:before, .under-hover.textcolor-black:before,
+.textcolor-black .multi-under-hover:before, .multi-under-hover.textcolor-black:before {
+	background-color:rgba(10,10,10,1);
+}
+.multi-under-hover:after,
+.textcolor-black .multi-under-hover:after, .multi-under-hover.textcolor-black:after {
+	background-color:rgba(10,10,10,0.2);
+}
+.under-hover,
+.textcolor-black .under-hover, .under-hover.textcolor-black,
+.textcolor-black .multi-under-hover, .multi-under-hover.textcolor-black {
+	color:rgba(65,65,65,1) !important;
+}
+.textcolor-white .under-hover:before, .under-hover.textcolor-white:before,
+.textcolor-white .multi-under-hover:before, .multi-under-hover.textcolor-white:before {
+	background-color:rgba(255,255,255,1);
+}
+.textcolor-white .multi-under-hover:after, .multi-under-hover.textcolor-white:after {
+	background-color:rgba(255,255,255,0.4);
+}
+.textcolor-white .under-hover, .under-hover.textcolor-white,
+.textcolor-white .multi-under-hover, .multi-under-hover.textcolor-white {
+	color:rgba(255,255,255,1) !important;
+}
+.under-hover:before,
+.under-hover:hover:before,
+.multi-under-hover:before,
+.multi-under-hover:hover:before,
+.multi-under-hover:after {
+	transition:width 0.5s ease;
+	-webkit-transition:width 0.5s ease;
+	-moz-transition:width 0.5s ease;
+}
+
+.btn-more {
+	font-size:20px;
+	line-height:30px;
+	font-weight:400;
+}
+
+/* --- btn  --- */

@@ -1,0 +1,324 @@
+.section-texteditor {
+	position:relative;
+}
+.section-texteditor .row {
+	margin-right: -20px !important;
+    margin-left: -20px !important;
+}
+.section-texteditor .row > [ class*="col-" ] {
+	padding-left:20px !important;
+	padding-right:20px !important;
+}
+
+.section-texteditor h1, .section-texteditor .h1 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+	letter-spacing:0;
+}
+.section-texteditor h2, .section-texteditor .h2 {
+	font-size: 35px;
+	line-height: 35px;
+	font-weight: 400;
+}
+.section-texteditor h3, .section-texteditor .h3 {
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+}
+.section-texteditor h4, .section-texteditor .h4 ,
+.section-texteditor h5, .section-texteditor .h5 ,
+.section-texteditor h6, .section-texteditor .h6 {
+	font-size: 22px;
+	line-height: 30px;
+	font-weight:300;
+}
+.section-texteditor.fix-fontsize-head h1, .section-texteditor.fix-fontsize-head .h1,
+.section-texteditor.fix-fontsize-head h2, .section-texteditor.fix-fontsize-head .h2,
+.section-texteditor.fix-fontsize-head h3, .section-texteditor.fix-fontsize-head .h3,
+.section-texteditor.fix-fontsize-head h4, .section-texteditor.fix-fontsize-head .h4,
+.section-texteditor.fix-fontsize-head h5, .section-texteditor.fix-fontsize-head .h5,
+.section-texteditor.fix-fontsize-head h6, .section-texteditor.fix-fontsize-head .h6 {
+	font-size: 28px;
+	line-height: 30px;
+	font-weight: 400;
+}
+
+.section-texteditor strong { font-weight:500; }
+.section-texteditor blockquote {
+	position:relative;
+	margin:60px 0;
+	padding:0 0 0 70px;
+	border:none !important;
+	font-size: 28px;
+	line-height: 35px;
+	font-weight: 400;
+    color: rgba(16,16,16,1) !important;
+}
+.section-texteditor blockquote:before {
+	position:absolute;
+	top:-8px;
+	left:0;
+    font-family: "porjai-icon" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "\e02b";
+	font-size:40px !important;
+	opacity:0.3;
+}
+
+.section-texteditor ul, .section-texteditor ol {
+	margin-bottom:0 !important;
+	padding-left:30px !important;
+	list-style-position: outside;
+}
+.section-texteditor ul[ data-col-li ] {
+	display:table;
+	clear:both;
+	width:100%;
+}
+.section-texteditor ul[ data-col-li ] > li {
+	float:left;
+	width:100%;
+	padding-right:40px;
+}
+.section-texteditor ul[ data-col-li="1" ] > li { width:100%; padding-right:0; }
+.section-texteditor ul[ data-col-li="2" ] > li { width:50%; }
+.section-texteditor ul[ data-col-li="3" ] > li { width:calc( 100% / 3 ); }
+.section-texteditor ol {
+	position:relative;	
+	list-style: none;
+	counter-reset: item;
+	padding-left:40px !important;
+}
+.section-texteditor ol > li {
+	position:relative;	
+	counter-increment: item;
+	margin:20px 0;
+}
+.section-texteditor ol > li:before {
+ 	position:absolute;
+	top:3px;
+	left:-40px;
+	display: inline-block;
+	content: counter(item);
+	/*width:23px;
+	height:23px;
+	font-size:17px;
+	line-height:18px;
+	padding-top:3px;*/
+	width:25px;
+	height:25px;
+	font-size:19px;
+	line-height:20px;
+	padding-top:3px;
+	border-radius: 100%;	
+	font-weight:400;
+	text-align: center;
+	background: rgba(16,16,16,1);	
+	color: rgba(255,255,255,1);
+	
+ 
+}
+.section-texteditor img {
+	position:relative;
+	display:block;
+	max-width:100%;
+	width:100%;
+}
+.section-texteditor img.imgsize-original {
+	width:auto !important;
+}
+.section-texteditor img.img-center {
+	margin-left:auto;
+	margin-right:auto;
+}
+.section-texteditor .info-img {
+	position:relative;
+	font-size:17px;
+	line-height:18px;
+	font-weight:500;
+	font-style:italic;
+	letter-spacing:0.3px;
+	color:rgba(16,16,16,0.7);
+	text-align:center;
+	padding:10px 0;
+}
+.section-texteditor iframe {
+	position:relative;
+	width:100%;
+	height:500px;
+	margin:0 auto;
+}
+.section-texteditor iframe.video {
+	position:relative;
+	width:100%;
+	height:500px;
+}
+.section-texteditor iframe.panorama {
+	position:relative;
+	width:100%;
+	height:500px;
+}
+.section-texteditor iframe.google-map {
+	position:relative;
+	width:100%;
+	height:500px;
+}
+
+.section-texteditor i[ class*="aicon-quote-" ] {
+	font-size: 45px;
+    line-height: 50px;
+}
+
+.section-texteditor .under-border {
+	position:relative;
+	display: block;
+	height:1px;
+	overflow:hidden;
+	clear:both;
+	line-height:0 !important;
+	border-top:1px solid rgba(65,65,65,1) !important;
+	margin:30px auto;
+	width:100%;
+}
+
+.section-texteditor table,
+.section-texteditor table  tr,
+.section-texteditor table tr > td {
+	border-style:solid !important;
+	border-width:1px !important;
+	border-color:rgba(217,217,217,1) !important;
+}
+.section-texteditor table {
+	width:100% !important;
+	max-width:100% !important;
+}
+.section-texteditor table tr > td {
+	padding:7px 15px !important;
+}
+
+.section-texteditor ul.tab-button-menu,
+.section-texteditor ul.tab-button-menu > li {
+	position:relative;
+	list-style:none !important;
+	margin:0 !important;
+	padding:0 !important;
+}
+.section-texteditor ul.tab-button-menu {
+	width:100%;
+	display:table;
+	clear:both;
+	margin:0 auto;
+}
+.section-texteditor ul.tab-button-menu > li {
+	width:auto !important;
+	display:table-cell !important;
+	/*float:left;*/
+	border:1px solid rgba(217,217,217,1) !important;
+}
+.section-texteditor ul.tab-button-menu > li + li {
+	border-left: none !important;
+}
+.section-texteditor ul.tab-button-menu > li,
+.section-texteditor ul.tab-button-menu a {
+	position:relative;
+	display:block;
+	color: rgba(16,16,16,1) !important;
+	background-color:rgba(0,0,0,0) !important;
+	padding:10px 15px !important;
+	text-align:center;
+}
+.section-texteditor ul.tab-button-menu > li:hover,
+.section-texteditor ul.tab-button-menu a:hover {
+	background-color:rgba(0,0,0,0.07) !important;
+}
+.section-texteditor ul.tab-button-menu > li,
+.section-texteditor ul.tab-button-menu > li:hover,
+.section-texteditor ul.tab-button-menu a,
+.section-texteditor ul.tab-button-menu a:hover {
+	transition:all 0.5s ease;
+	-webkit-transition:all 0.5s ease;
+	-moz-transition:all 0.5s ease;	
+}
+.section-texteditor .tab-content-menu {
+	position:relative;
+	display:block;
+}
+
+/* lg more */
+@media (min-width:1200px) and (max-width:1649px) {
+}
+
+/* md */
+@media (min-width:992px) and (max-width:1199px) {
+}
+
+/* sm - xs */
+@media (max-width:991px) {
+}
+
+/* sm */
+@media (min-width:768px) and (max-width:991px) {
+}
+
+/* xs */
+@media (max-width:767px) {
+.section-texteditor h1, .section-texteditor .h1 {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 400;
+	letter-spacing:0;
+}
+.section-texteditor h2, .section-texteditor .h2 {
+	font-size: 25px;
+	line-height: 30px;
+	font-weight: 400;
+}
+.section-texteditor h3, .section-texteditor .h3 {
+	font-size: 22px;
+	line-height: 30px;
+	font-weight: 400;
+}
+.section-texteditor h4, .section-texteditor .h4 ,
+.section-texteditor h5, .section-texteditor .h5 ,
+.section-texteditor h6, .section-texteditor .h6 {
+	font-size: 19px;
+	line-height: 25px;
+	font-weight:400;
+}
+.section-texteditor.fix-fontsize-head h1, .section-texteditor.fix-fontsize-head .h1,
+.section-texteditor.fix-fontsize-head h2, .section-texteditor.fix-fontsize-head .h2,
+.section-texteditor.fix-fontsize-head h3, .section-texteditor.fix-fontsize-head .h3,
+.section-texteditor.fix-fontsize-head h4, .section-texteditor.fix-fontsize-head .h4,
+.section-texteditor.fix-fontsize-head h5, .section-texteditor.fix-fontsize-head .h5,
+.section-texteditor.fix-fontsize-head h6, .section-texteditor.fix-fontsize-head .h6 {
+	font-size: 25px;
+	line-height: 30px;
+	font-weight: 400;
+}
+.section-texteditor blockquote {
+	margin:40px 0;
+	padding:0 0 0 70px;
+	font-size: 25px;
+	line-height: 30px;
+}
+.section-texteditor iframe,
+.section-texteditor iframe.video,
+.section-texteditor iframe.panorama,
+.section-texteditor iframe.google-map {
+	height:350px;
+}
+.section-texteditor table tr > td {
+	padding:5px 10px !important;
+}
+}
+
+/* xs more */
+@media (max-width:350px) {
+}

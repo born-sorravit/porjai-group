@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "porjai-icon-location";
+  src:url("../fonts/icon-location.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "porjai-icon-location" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="aicon-location-"]:before,
+[class*=" aicon-location-"]:before {
+  font-family: "porjai-icon-location" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.aicon-location-airport:before {
+  content: "\e000";
+}
+.aicon-location-airport-link:before {
+  content: "\e001";
+}
+.aicon-location-bts:before {
+  content: "\e002";
+}
+.aicon-location-bus:before {
+  content: "\e003";
+}
+.aicon-location-expressway:before {
+  content: "\e004";
+}
+.aicon-location-hospital:before {
+  content: "\e005";
+}
+.aicon-location-location:before {
+  content: "\e006";
+}
+.aicon-location-mrt:before {
+  content: "\e007";
+}
+.aicon-location-road:before {
+  content: "\e008";
+}
+.aicon-location-school:before {
+  content: "\e009";
+}
+.aicon-location-shopping:before {
+  content: "\e00a";
+}
