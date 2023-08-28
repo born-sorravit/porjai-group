@@ -83,7 +83,7 @@ ul.main-menu > li + li:before {
 	overflow: hidden;	
 }
 
-a.link-menu, #btn-main-menu {
+a.link-menu, #btn-main-menu,  .menus a{
 	font-family:'db helvethaica';
 	font-weight:500;
 	font-size:14px;
@@ -111,6 +111,68 @@ a.link-menu.active, #btn-main-menu {
 	width:auto;
 	display:inline-block;
 }
+
+
+.menu ul.menus {
+	height: auto;
+	width: 240px;
+	background-color: #437580;
+	position: absolute;
+	z-index: 99;
+	display: none;
+	border: 0;
+	color: #acacac;
+  }
+  
+  .menu ul.menus li {
+	display: block;
+	width: 100%;
+	font: 12px Arial;
+	text-transform: none;
+	padding: 10px;
+  }
+  
+  .menu li:hover ul.menus {
+	padding-top: 10px;
+	display: block
+  }
+  
+  .menu a.prett {
+	padding: 0 27px 0 14px
+  }
+  
+  .menu a.prett::after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-width: 6px 5px;
+	border-style: solid;
+	border-color: #eee transparent transparent transparent;
+	position: absolute;
+	top: 15px;
+	right: 9px
+  }
+  
+  .menu ul.menus a:hover {
+	color: #FFF;
+  }
+.menu ul.menus .submenu {
+	display: none;
+	position: absolute;
+	left: 180px;
+	background: #111;
+	top: 0;
+	width: 180px;
+  }
+  
+  .menu ul.menus .submenu li {
+	background-color: #437580;
+  }
+  
+  .menu ul.menus .has-submenu:hover .submenu {
+	display: block;
+  }
+
 
 /* BTn main menu */
 
@@ -276,7 +338,7 @@ ul.main-menu > li + li:before {
 	display:none;
 }
 ul.main-menu > li a {
-	background-color:rgba(255,255,255,0.1);
+	/* background-color:rgba(255,255,255,0.1); */
 }
 ul.main-menu > li a:hover {
 	color:#fff;
@@ -286,5 +348,14 @@ a.link-menu {
 	display:block;
 	width:100%;
 	padding:15px 20px;
+}
+.menu ul.menus{
+	width: 100%;
+}
+.menu ul.menus li {
+    padding: 10px 21px;
+}
+.menu li:hover ul.menus {
+    padding-top: 0px;
 }
 }
