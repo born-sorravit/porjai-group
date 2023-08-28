@@ -1409,7 +1409,8 @@ header.fix-header #section-header-microsite .menu-inline > .menu {
 /* ***** PROJECT FGF ***** */
 
 #section-prodetail-fgf > .inside {
-	padding:70px 0;
+	/* padding:70px 0; */
+	margin-top: 70px;
 }
 #section-prodetail-fgf .container {
 	display:table;
