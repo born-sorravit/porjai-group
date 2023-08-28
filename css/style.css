@@ -382,14 +382,14 @@ h6,
   margin: 0 5px;
   width: 15px;
   height: 15px;
-  background: #dddddd;
+  background: #dddddd !important;
   border-radius: 2px;
   transition: 0.5s;
 }
 
 .testimonial-carousel .owl-dot.active {
-  width: 30px;
-  background: var(--primary);
+  /* width: 30px; */
+  background: var(--primary) !important;
 }
 
 .testimonial-carousel .owl-item.center {
